@@ -1,0 +1,25 @@
+[
+  {
+    "Author": "Alpha Channel Team",
+    "Name": "Alpha Channel",
+    "IconUrl": "https://alphachannel-assets.pages.dev/alpha-channel-icon.png",
+    "InternalName": "AlphaChannel.Plugin",
+    "AssemblyVersion": "2.2.3.0",
+    "Description": "The ultimate social watch together hub, right in Eorzea! Watch movies, DJ Live and play Retro games.",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "video",
+      "watch party",
+      "media"
+    ],
+    "DalamudApiLevel": 15,
+    "Punchline": "Watch, play and listen together in Eorzea!",
+    "AcceptsFeedback": true,
+    "IsHide": false,
+    "DownloadCount": 0,
+    "LastUpdate": 1786073514,
+"RepoUrl": "https://github.com/AlphaPlugins14/Alpha-Channel",
+"DownloadLinkInstall": "https://github.com/AlphaPlugins14/Alpha-Channel/releases/download/v2.2.3.0/latest.zip",
+"DownloadLinkUpdate": "https://github.com/AlphaPlugins14/Alpha-Channel/releases/download/v2.2.3.0/latest.zip"
+  }
+]
