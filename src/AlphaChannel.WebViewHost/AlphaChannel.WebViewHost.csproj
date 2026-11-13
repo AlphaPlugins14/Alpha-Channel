@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <OutputPath>bin\WebViewPayload\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../AlphaChannel.BrowserShared/MediaTlsTrust.cs" Link="MediaTlsTrust.cs" />
+    <Content Include="../AlphaChannel.BrowserShared/cacert.pem;../AlphaChannel.BrowserShared/CA-NOTICE.txt;../AlphaChannel.BrowserShared/CA-MPL-2.0.txt" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioProtocol.cs" Link="StudioProtocol.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioCommandQueue.cs" Link="StudioCommandQueue.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioMixer.cs" Link="StudioMixer.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioDeckPlayback.cs" Link="StudioDeckPlayback.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/EasyListBlocker.cs" Link="EasyListBlocker.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/NavigationGuard.cs" Link="NavigationGuard.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/YouTubeAccountLookup.cs" Link="YouTubeAccountLookup.cs" />
+    <EmbeddedResource Include="../AlphaChannel.BrowserShared/preapproved-redirect-hosts.txt" LogicalName="AlphaChannel.PreapprovedRedirectHosts.txt" />
+    <None Include="../AlphaChannel.BrowserShared/easylist.txt" Link="easylist.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../AlphaChannel.BrowserShared/NOTICE.txt" Link="EasyList-NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4022.49" />
+    <PackageReference Include="NAudio.Wasapi" Version="3.1.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+{
+  "Author": "Alpha Channel Team",
+  "Name": "Alpha Channel",
+  "InternalName": "AlphaChannel.Plugin",
+  "RepoUrl": "https://github.com/AlphaPlugins14/Alpha-Channel",
+  "Punchline": "Watch, play and listen together in Eorzea!",
+  "Description": "The ultimate social watch together hub, right in Eorzea! Watch movies, DJ Live and play Retro games.",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "video",
+    "watch party",
+    "media"
+  ],
+  "IconUrl": "https://assets.example.invalid/alpha-channel-icon.png"
+}

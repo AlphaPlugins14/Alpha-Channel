@@ -1,0 +1,8 @@
+Mozilla public Certificate Authority bundle, converted by the curl project.
+Source: https://curl.se/ca/cacert-2026-10-20.pem
+CA extraction information: https://curl.se/docs/caextract.html
+SHA-256: 796f1389bfea13c0ed78f663b765baaff54a508e5483786bd6ece73c5e3e3cbe
+Certificate snapshot: 20 October 2026
+Licence: Mozilla Public License 2.0; see CA-MPL-2.0.txt.
+This is public trust data, not a server certificate or private key.
+Refresh and verify against curl's published checksum when maintaining media TLS support.

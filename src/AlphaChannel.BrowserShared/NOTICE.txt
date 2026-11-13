@@ -1,0 +1,11 @@
+EasyList filter subscription
+Source: https://easylist.to/easylist/easylist.txt
+Copyright: The EasyList authors (https://easylist.to/)
+Distributed unmodified under Creative Commons Attribution-ShareAlike 3.0 Unported.
+License: https://creativecommons.org/licenses/by-sa/3.0/legalcode
+Repository license information: https://easylist.to/pages/licence.html
+
+The browser helpers implement standard URL blocking and CSS element hiding.
+Extension-specific scriptlets, procedural selectors, redirect resources and
+unsupported filter options are not executed. Unsupported rules are skipped
+rather than applied with broader semantics.

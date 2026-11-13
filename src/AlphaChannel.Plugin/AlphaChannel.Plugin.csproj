@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+	<PropertyGroup>
+		<LangVersion>preview</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>2.2.5.2</Version>
+		<Deterministic>true</Deterministic>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="../AlphaChannel.BrowserShared/YouTubeAccountLookup.cs" Link="Core/YouTube/YouTubeAccountLookup.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/MediaTlsTrust.cs" Link="Core/Video/MediaTlsTrust.cs" />
+    <Content Include="../AlphaChannel.BrowserShared/cacert.pem;../AlphaChannel.BrowserShared/CA-NOTICE.txt;../AlphaChannel.BrowserShared/CA-MPL-2.0.txt" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioProtocol.cs" Link="Core/BroadcastStudio/StudioProtocol.cs" />
+    <Compile Include="../AlphaChannel.BrowserShared/StudioCommandQueue.cs" Link="Core/BroadcastStudio/StudioCommandQueue.cs" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))'">
+    <DalamudLibPath>$(DALAMUD_HOME)/</DalamudLibPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\notification-*.mp3;Assets\notification-sounds-credits.txt" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="chromium-download.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Fonts\*.ttf;Fonts\Inter-OFL.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\addfriends.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\alphaicon*.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\browse-apps.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\chromium-browser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\webview2-browser.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\create-room.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\create.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\friends-list.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\home-hero.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\home-test-slot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\join-room.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\join.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\leaveroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\place-screen.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\reactpreview.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\roombg1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\roombg2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\viewroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\watch-videos.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\watchpartyheader.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\watchparty-empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\roulette-chips.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\roulette-roll.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\slot-coin.wav" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\lucky-wheel-spin.wav" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\skyrail-hit.wav" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\skyrail-theme.mp3" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\skyrail-boss-alert.mp3" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="Assets\chocorace-theme.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\chocorace-start.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\chocorace-meteor.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\chocorace-fanfare.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="System" />
+    <Using Include="System.Collections" />
+    <Using Include="System.Collections.Generic" />
+    <Using Include="System.Linq" />
+    <Using Include="System.Numerics" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlphaChannel.Contracts\AlphaChannel.Contracts.csproj" />
+  </ItemGroup>
+
+  <!-- Chromium runs out-of-process because Dalamud plugins use a collectible
+       AssemblyLoadContext that cannot load CefSharp's mixed C++/CLI bridge. -->
+  <PropertyGroup>
+    <BrowserHostOutputPath>$(MSBuildProjectDirectory)\..\AlphaChannel.BrowserHost\bin\BrowserPayload\$(Configuration)\</BrowserHostOutputPath>
+    <WebViewHostOutputPath>$(MSBuildProjectDirectory)\..\AlphaChannel.WebViewHost\bin\WebViewPayload\$(Configuration)\</WebViewHostOutputPath>
+    <ChromiumArchivePath>$(MSBuildProjectDirectory)\obj\ChromiumPackage\$(Configuration)\alphachromium.zip</ChromiumArchivePath>
+    <!-- A Release build made from Visual Studio or dotnet produces a clean,
+         copy-ready directory that excludes public-release archives. -->
+  </PropertyGroup>
+
+  <Target Name="BuildBrowserHost"
+          AfterTargets="CopyFilesToOutputDirectory"
+          BeforeTargets="DefaultDalamudPackagerDebug;DefaultDalamudPackagerRelease">
+    <MSBuild Projects="..\AlphaChannel.BrowserHost\AlphaChannel.BrowserHost.csproj"
+             Targets="Build"
+             Properties="Configuration=$(Configuration);NuGetAudit=false;OutputPath=$(BrowserHostOutputPath)" />
+    <ItemGroup>
+      <BrowserHostPayload Include="$(BrowserHostOutputPath)**\*" />
+    </ItemGroup>
+    <!-- Remove the former flat browser payload when upgrading an existing build. -->
+    <Delete Files="@(BrowserHostPayload->'$(OutputPath)%(RecursiveDir)%(Filename)%(Extension)')" />
+    <RemoveDir Directories="$(OutputPath)locales\" />
+    <!-- Chromium is distributed separately; clear the formerly bundled payload. -->
+    <RemoveDir Directories="$(OutputPath)Browsers\Chromium\" />
+    <Error Condition="!Exists('$(BrowserHostOutputPath)AlphaChannel.BrowserHost.exe')"
+           Text="The Alpha Channel browser host was not produced." />
+    <Error Condition="!Exists('$(BrowserHostOutputPath)libcef.dll')"
+           Text="The Chromium browser runtime was not produced." />
+    <Error Condition="!Exists('$(BrowserHostOutputPath)resources.pak') or !Exists('$(BrowserHostOutputPath)icudtl.dat') or !Exists('$(BrowserHostOutputPath)locales\en-US.pak')"
+           Text="The Chromium browser runtime resources or locales are missing." />
+  </Target>
+
+  <Target Name="FingerprintChromiumPayload" DependsOnTargets="BuildBrowserHost">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\obj\ChromiumPackage\$(Configuration)\" />
+    <GetFileHash Files="@(BrowserHostPayload)" Algorithm="SHA256">
+      <Output TaskParameter="Items" ItemName="ChromiumPayloadHashes" />
+    </GetFileHash>
+    <!-- Content hashes avoid unnecessary updates from timestamp-only changes;
+         the inventory also detects files added to or removed from the payload. -->
+    <WriteLinesToFile File="$(MSBuildProjectDirectory)\obj\ChromiumPackage\$(Configuration)\payload.txt"
+                      Lines="@(ChromiumPayloadHashes->'%(Identity)|%(FileHash)')"
+                      Overwrite="true" WriteOnlyWhenDifferent="true" Encoding="UTF-8" />
+  </Target>
+
+  <!-- Keep the cached archive outside OutputPath so the plugin packager cannot
+       bundle it. Reuse it when the browser payload has not changed. -->
+  <Target Name="BuildChromiumArchive"
+          DependsOnTargets="FingerprintChromiumPayload"
+          Inputs="$(MSBuildProjectDirectory)\obj\ChromiumPackage\$(Configuration)\payload.txt;$(MSBuildProjectFullPath)"
+          Outputs="$(ChromiumArchivePath)">
+    <MakeDir Directories="$(MSBuildProjectDirectory)\obj\ChromiumPackage\$(Configuration)\" />
+    <ZipDirectory SourceDirectory="$(BrowserHostOutputPath)"
+                  DestinationFile="$(ChromiumArchivePath)" Overwrite="true" />
+  </Target>
+
+  <Target Name="PrepareChromiumPackage"
+          BeforeTargets="DefaultDalamudPackagerDebug;DefaultDalamudPackagerRelease"
+          DependsOnTargets="BuildChromiumArchive">
+    <!-- Remove last build's published archive before the recursive package scan. -->
+    <Delete Files="$(OutputPath)alphachromium.zip" />
+    <GetFileHash Files="$(ChromiumArchivePath)" Algorithm="SHA256">
+      <Output TaskParameter="Items" ItemName="ChromiumArchiveHash" />
+    </GetFileHash>
+    <!-- The archive digest is the package version: it covers both the host and
+         every runtime file. The future downloader compares it with its installed
+         digest and verifies the download before installing it. -->
+    <WriteLinesToFile File="$(OutputPath)alphachromium.json"
+                      Lines="{ &quot;schemaVersion&quot;: 1, &quot;archive&quot;: &quot;alphachromium.zip&quot;, &quot;sha256&quot;: &quot;%(ChromiumArchiveHash.FileHash)&quot;, &quot;installDirectory&quot;: &quot;Browsers/Chromium&quot; }"
+                      Overwrite="true" WriteOnlyWhenDifferent="true" Encoding="UTF-8" />
+  </Target>
+
+  <Target Name="PublishChromiumArchive"
+          DependsOnTargets="PrepareChromiumPackage">
+    <Copy SourceFiles="$(ChromiumArchivePath)" DestinationFiles="$(OutputPath)alphachromium.zip" />
+    <Message Importance="high" Text="Chromium download package created at: $(OutputPath)alphachromium.zip" />
+  </Target>
+
+  <!-- MSBuild can run AfterTargets hooks even when the referenced target's
+       configuration condition is false. Keep these hooks configuration-specific
+       so Release never publishes the ZIP before its packager has scanned. -->
+  <Target Name="PublishDebugChromiumArchive"
+          AfterTargets="DefaultDalamudPackagerDebug"
+          Condition="'$(Configuration)' == 'Debug'"
+          DependsOnTargets="PublishChromiumArchive" />
+  <Target Name="PublishReleaseChromiumArchive"
+          AfterTargets="DefaultDalamudPackagerRelease"
+          Condition="'$(Configuration)' == 'Release'"
+          DependsOnTargets="PublishChromiumArchive" />
+
+  <!-- The Dalamud packager scans OutputPath recursively. Remove artifacts
+       produced by earlier Release builds before that scan so a previous ZIP
+       or copy-ready deployment can never be embedded in the next package. -->
+  <Target Name="BuildWebViewHost"
+          AfterTargets="BuildBrowserHost"
+          BeforeTargets="DefaultDalamudPackagerDebug;DefaultDalamudPackagerRelease">
+    <MSBuild Projects="..\AlphaChannel.WebViewHost\AlphaChannel.WebViewHost.csproj"
+             Targets="Restore;Build"
+             Properties="Configuration=$(Configuration);NuGetAudit=false;OutputPath=$(WebViewHostOutputPath)" />
+    <ItemGroup>
+      <WebViewHostPayload Include="$(WebViewHostOutputPath)**\*"
+                          Exclude="**\*.pdb;**\*.xml" />
+    </ItemGroup>
+    <Error Condition="!Exists('$(WebViewHostOutputPath)AlphaChannel.WebViewHost.dll')"
+           Text="The WebView2 browser host DLL was not produced in the expected build directory." />
+    <!-- Remove graphics-capture DLLs left by builds made before screencast became the only route. -->
+    <ItemGroup>
+      <ObsoleteWebViewGpuDll Include="$(OutputPath)Browsers\WebView\SharpDX*.dll" />
+    </ItemGroup>
+    <Delete Files="@(ObsoleteWebViewGpuDll)" />
+    <Copy SourceFiles="@(WebViewHostPayload)"
+          DestinationFiles="@(WebViewHostPayload->'$(OutputPath)Browsers\WebView\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+    <Error Condition="!Exists('$(OutputPath)Browsers\WebView\AlphaChannel.WebViewHost.exe')"
+           Text="The WebView2 browser host was not produced." />
+  </Target>
+
+  <Target Name="BuildSpotifyProbe"
+          AfterTargets="BuildWebViewHost"
+          BeforeTargets="DefaultDalamudPackagerDebug;DefaultDalamudPackagerRelease">
+    <PropertyGroup>
+      <SpotifyProbeOutput>$(MSBuildProjectDirectory)\..\AlphaChannel.SpotifyProbe\bin\ProbePayload\$(Configuration)\</SpotifyProbeOutput>
+    </PropertyGroup>
+    <MSBuild Projects="..\AlphaChannel.SpotifyProbe\AlphaChannel.SpotifyProbe.csproj"
+             Targets="Restore;Build" Properties="Configuration=$(Configuration);NuGetAudit=false" />
+    <!-- The old capture diagnostic used NAudio; capture now belongs to Studio. -->
+    <Delete Files="$(SpotifyProbeOutput)NAudio.Core.dll;$(SpotifyProbeOutput)NAudio.Wasapi.dll;$(OutputPath)Helpers\Spotify\NAudio.Core.dll;$(OutputPath)Helpers\Spotify\NAudio.Wasapi.dll" />
+    <ItemGroup>
+      <SpotifyProbePayload Include="$(SpotifyProbeOutput)**\*" Exclude="**\*.pdb;**\*.xml" />
+    </ItemGroup>
+    <Copy SourceFiles="@(SpotifyProbePayload)"
+          DestinationFiles="@(SpotifyProbePayload->'$(OutputPath)Helpers\Spotify\%(RecursiveDir)%(Filename)%(Extension)')" />
+    <Error Condition="!Exists('$(OutputPath)Helpers\Spotify\AlphaChannel.SpotifyProbe.exe')"
+           Text="The Spotify player helper was not produced." />
+  </Target>
+
+  <Target Name="CleanReleasePackagingArtifacts"
+          BeforeTargets="DefaultDalamudPackagerRelease"
+          Condition="'$(Configuration)' == 'Release'">
+    <RemoveDir Directories="$(OutputPath)deploy\;$(OutputPath)AlphaChannel.Plugin\" />
+    <Delete Files="$(OutputPath)latest.zip" />
+  </Target>
+
+  <Target Name="CreateReleaseDeployment"
+          AfterTargets="DefaultDalamudPackagerRelease"
+          DependsOnTargets="BuildBrowserHost;BuildWebViewHost;BuildSpotifyProbe;PublishChromiumArchive"
+          Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <!-- Keep the copy-ready deployment outside OutputPath. The Dalamud
+           packager scans OutputPath recursively on subsequent builds. -->
+      <ReleaseDeployDirectory>$(MSBuildProjectDirectory)\deploy\</ReleaseDeployDirectory>
+    </PropertyGroup>
+    <RemoveDir Directories="$(ReleaseDeployDirectory)" />
+
+    <ItemGroup>
+      <!-- Evaluate this after clearing deploy. Package output, loose ZIPs,
+           debug symbols, and legacy in-output deployments are excluded. -->
+      <ReleaseDeployFiles Include="$(OutputPath)**\*"
+                          Exclude="$(OutputPath)deploy\**\*;$(OutputPath)AlphaChannel.Plugin\**\*;$(OutputPath)**\latest.zip;$(OutputPath)**\*.pdb;$(OutputPath)**\*.lic" />
+    </ItemGroup>
+
+    <Error Condition="!Exists('$(OutputPath)AlphaChannel.Plugin.dll')"
+           Text="Release deployment failed: AlphaChannel.Plugin.dll is missing." />
+    <Error Condition="!Exists('$(OutputPath)AlphaChannel.Plugin.json')"
+           Text="Release deployment failed: AlphaChannel.Plugin.json is missing." />
+    <Error Condition="!Exists('$(OutputPath)alphachromium.zip')"
+           Text="Release deployment failed: alphachromium.zip is missing." />
+    <Error Condition="!Exists('$(OutputPath)alphachromium.json')"
+           Text="Release deployment failed: Chromium package version manifest is missing." />
+    <Error Condition="!Exists('$(OutputPath)Fonts\Inter-Regular.ttf')"
+           Text="Release deployment failed: plugin fonts are missing." />
+    <Error Condition="!Exists('$(OutputPath)Assets\alphaicon.png')"
+           Text="Release deployment failed: plugin assets are missing." />
+
+    <Copy SourceFiles="@(ReleaseDeployFiles)"
+          DestinationFiles="@(ReleaseDeployFiles->'$(ReleaseDeployDirectory)%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="false" />
+
+    <Message Importance="high"
+             Text="Alpha Channel copy-ready Release created at: $(ReleaseDeployDirectory)" />
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4">
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="SixLabors.ImageSharp" Version="[3.2.0]" />
+    <PackageReference Include="SixLabors.Fonts" Version="[2.1.3]" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="[2.1.7]" />
+    <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="10.0.10" />
+    <PackageReference Include="YoutubeExplode" Version="6.6.0" />
+    <PackageReference Include="AngleSharp" Version="1.5.0" />
+	  <PackageReference Include="SharpDX" Version="4.2.0" />
+	  <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
+	  <PackageReference Include="SharpDX.D3DCompiler" Version="4.2.0" />
+	  <PackageReference Include="SharpDX.XAudio2" Version="4.2.0" />
+	  <PackageReference Include="SharpCompress" Version="0.48.1" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+Sound effects obtained from https://www.zapsplat.com
+
+Notification sounds by ZapSplat:
+Bright chime: zapsplat_multimedia_notification_alert_ping_bright_chime_004_93280.mp3
+Short click: zapsplat_multimedia_ui_tone_app_clicky_short_notification_005_91182.mp3
+Thin message click: zapsplat_multimedia_ui_tone_short_thin_clicky_nofitication_new_message_004_92803.mp3
+Classic bell: zapsplat_multimedia_ui_notification_classic_bell_synth_success_107505.mp3
+
+Used as notification effects in Alpha Channel under the ZapSplat Standard License.
+https://www.zapsplat.com/license-type/standard-license/

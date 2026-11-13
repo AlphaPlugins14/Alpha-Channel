@@ -1,0 +1,96 @@
+namespace AlphaChannel.Contracts;
+
+// REST contracts for XIVAuth device-flow sign-in.
+// The Alpha Channel server is the registered OAuth client and communicates with XIVAuth.
+// The plugin opens the verification URL in a browser and polls the server for the result.
+
+// Previous plugin code, likely needs removing with future updates
+public sealed record AuthStartRequest(string CharacterName, string World, bool IsLalafell = false);
+
+public sealed record AuthStartResponse(
+    string FlowId,
+    string UserCode,
+    string VerificationUri,
+    string? VerificationUriComplete,
+    int IntervalSeconds,
+    int ExpiresInSeconds);
+
+public sealed record AuthPollRequest(string FlowId);
+
+public enum AuthPollStatus
+{
+    Pending,       // normal "still waiting on the user" state during polling
+    Success,
+    Denied,
+    Expired,
+    Banned,
+    Error,
+}
+
+public sealed record AuthPollResponse(
+    AuthPollStatus Status,
+    string? Token,
+    AccountSummary? Account,
+    string? ErrorMessage,
+    bool IsNewAccount = false);
+
+// Deliberately excludes the verified character name/world - see AlphaChannel.Server.Data.Account's
+// doc comment. Self-view only (GET/PATCH /me) - includes InviteCode, which must never be exposed
+// when viewing someone else's profile (see AccountProfileDto below for that case).
+// AvatarImageUrl is a relative path like /avatars/{file} when the player uploaded a custom pic;
+// clients resolve it against the relay base URL. Null = use AvatarIcon + AvatarColorHex chip.
+public enum PatreonTier
+{
+    None = 0,
+    Unknown = 1,
+    Tier1 = 2,
+    Tier2 = 3,
+    Tier3 = 4,
+}
+
+public sealed record AccountSummary(
+    string AccountId, string Handle, string DisplayName, string InviteCode,
+    string? AvatarIcon, string AvatarColorHex, string? Bio, string? StatusMessage,
+    string? AvatarImageUrl,
+    PatreonTier PatreonTier = PatreonTier.None,
+    bool IsDeveloper = false,
+    bool IsGuest = false);
+
+// The one deliberate exception to "real character name/world is never returned to a client" - only
+// ever the caller's own linked characters, via GET /me/characters, never anyone else's.
+public sealed record LinkedCharacterDto(string CharacterName, string World, bool IsPrimary);
+
+// Asked once at account creation (IsNewAccount on the poll response), also editable later from
+// Settings. Races is a free-form self-report, not used for any gating decision by itself.
+public sealed record OnboardingRequest(string[] Races, bool WantsToSeeLalafellContent);
+
+// DisplayName is what shows up throughout Friends/Alpha Chat/Activity/Tweeter, and (see
+// FriendService.FindAccountByDisplayNameAsync) is also the add-a-friend lookup key - a chosen
+// "gamer tag" players can actually remember and share, unlike the random Handle. Must be unique
+// (case-insensitive); the server returns 409 if it's taken. AvatarIcon is a key into a client-side
+// curated icon set used when no custom AvatarImageUrl is set. Every field is null-means-unchanged,
+// so a caller can update just one at a time. Custom pictures use POST/DELETE /me/avatar instead.
+public sealed record UpdateProfileRequest(
+    string? DisplayName, string? AvatarIcon, string? AvatarColorHex, string? Bio, string? StatusMessage);
+
+// Someone else's profile, via GET /accounts/{id}/profile - friends-only (or self, via GET /me
+// instead). FriendsSinceUnix is null when viewing your own profile.
+public sealed record AccountProfileDto(
+    string AccountId, string Handle, string DisplayName,
+    string? AvatarIcon, string AvatarColorHex, string? Bio, string? StatusMessage, long? FriendsSinceUnix,
+    string? AvatarImageUrl,
+    bool IsDeveloper = false,
+    PatreonTier PatreonTier = PatreonTier.None,
+    string? CharacterName = null,
+    string? CharacterWorld = null,
+    bool IsGuest = false);
+
+// The client persists a cryptographically random credential BEFORE registration.
+// Retrying with that credential resolves the same account, never another account.
+public sealed record GuestRegistrationRequest(string Credential, string DisplayName);
+public sealed record GuestRegistrationResponse(string Token, AccountSummary Account);
+public sealed record GuestCharacterReferenceRequest(string CharacterName, string HomeWorld, string CharacterIdentifier);
+public sealed record AccountGuestStatusRequest(string[] AccountIds);
+public sealed record AccountGuestStatus(string AccountId, bool IsGuest);
+
+public sealed record AdminPatchAccountRequest(PatreonTier? PatreonTier, bool? IsDeveloper);

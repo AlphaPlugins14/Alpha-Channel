@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AlphaChannel.Contracts/AlphaChannel.Contracts.csproj" />
+    <Project Path="src/AlphaChannel.Plugin/AlphaChannel.Plugin.csproj" />
+    <Project Path="src/AlphaChannel.BrowserHost/AlphaChannel.BrowserHost.csproj" />
+    <Project Path="src/AlphaChannel.WebViewHost/AlphaChannel.WebViewHost.csproj" />
+    <Project Path="src/AlphaChannel.SpotifyProbe/AlphaChannel.SpotifyProbe.csproj" />
+  </Folder>
+</Solution>

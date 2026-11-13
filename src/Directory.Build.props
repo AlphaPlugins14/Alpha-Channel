@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <!-- Map source documents for every shipped managed component, including helpers. -->
+    <Deterministic>true</Deterministic>
+    <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))=/_/</PathMap>
+  </PropertyGroup>
+</Project>
