@@ -2,7 +2,7 @@ Alpha Channel Plugin
 
 Play, watch, listen and socialise together.
 
-Use Repo https://plugin-repository.example.invalid/ In experimental > custom repos to install
+Use Repo https://alphachannel.pages.dev In experimental > custom repos to install
 
 Current Version 2.2.5.2
 
