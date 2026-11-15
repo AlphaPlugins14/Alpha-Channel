@@ -6,7 +6,8 @@
 
 1. Open Dalamud Settings and go to **Experimental → Custom Plugin Repositories**.
 2. Add the [Alpha Channel repository](https://alphachannel.pages.dev/): `https://alphachannel.pages.dev/`
-3. Open the Plugin Installer with `/xlplugins`, search for **Alpha Channel**, and install it.
+3. Add the repo url into your Dalamud custom repositories area in your settings > other tab.
+4. Open the Plugin Installer with `/xlplugins`, search for **Alpha Channel**, and install it.
 
 **Current version:** `2.2.5.3`
 
