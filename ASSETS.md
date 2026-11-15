@@ -1,10 +1,4 @@
-# Media assets omitted from the public source snapshot
-
-The code and project files retain their original asset references. Images and audio are omitted because public redistribution rights were not established for this export. Notification audio includes ZapSplat-licensed material.
-
-For a complete build/package, supply your own appropriately licensed replacement files at the paths below. The original project packaging expects these files; this export is not the complete release package.
-
-Publicly redistributable Inter fonts and their OFL notice, the CA certificate bundle and its notices, and the EasyList filter data and attribution remain included.
+# Media assets
 
 - `src/AlphaChannel.Plugin/Assets/addfriends.png`
 - `src/AlphaChannel.Plugin/Assets/alphaicon-blue.png`
