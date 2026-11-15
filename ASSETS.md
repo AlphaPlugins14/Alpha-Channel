@@ -41,4 +41,3 @@
 - `src/AlphaChannel.Plugin/Assets/watch-videos.png`
 - `src/AlphaChannel.Plugin/Assets/watchparty-empty.png`
 - `src/AlphaChannel.Plugin/Assets/watchpartyheader.png`
-- `src/AlphaChannel.Plugin/Assets/webview2-browser.png`
