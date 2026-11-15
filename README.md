@@ -10,6 +10,7 @@
 4. Open the Plugin Installer with `/xlplugins`, search for **Alpha Channel**, and install it.
 
 **Current version:** `2.2.5.3`
+**Last updated:** `14/11/2026`
 
 ## Project History
 
