@@ -1,3 +1,104 @@
+## 2.2.4.1
+
+- Removed the occasional Alpha Channel promotional messages from FFXIV chat.
+
+## 2.2.4.0
+
+- Spotify now appears as active playback in Watch Party, Media Player and Home, with the current track title.
+- Broadcast Studio uses the compact Now Playing layout, with the stream artwork beside the details.
+- The profile privacy popup now explains that visibility changes take effect immediately.
+- Moved the **Alpha Channel** context menu below FFXIV’s standard actions and made its icon easier to see.
+
+## 2.2.3.10
+
+- Added a **Friends** tab to profiles. Set your list to **Friends Only**, **Everyone** or **No one**. The default is **Friends Only**, and your friend count remains visible.
+- The Friends tab shows who’s online and highlights mutual friends.
+- Improved loading of older direct messages to prevent skipped or repeated entries. Improved room switching, host transfers, participant lists and connection reliability.
+- Fixed Patreon username colour effects resetting and improved blocking and listing visibility in the Friends directory.
+- Improved YouTube channel pages with larger cards and the usual Play, favourite and queue controls. Search also retries missing view counts.
+- Improved recovery from failed YouTube streams and fixed Alpha Channel context menus appearing on vendor and inventory items.
+- Strengthened account, messaging and Watch Party protections and improved service handling of busy or slow connections.
+
+## 2.2.3.9
+
+- Added an opt-in **Find Friends** directory. Create a listing with interests and what you’re looking for, or browse listings with filters and search.
+- Added **All** to the Looking for filter, renamed **General chatting** to **Chatting**, and clarified that **Discover** rotates the order daily.
+- Username colour effect options now show live previews in Settings and Alpha Chat.
+- Added an option to keep plugin controls visible during GPose. Clicking a name or avatar in an Alpha Chat or group roster now opens the profile.
+- Matched the Watch Party chat leave/end button to the red header control.
+
+## 2.2.3.8
+
+- Increased live playback buffering to reduce pauses and improved reconnecting when a broadcast restarts or changes audio track.
+- Fixed viewers being able to take over shared playback by starting radio after a host broadcast failed.
+- Host transfers can proceed if updating the Discord party post fails.
+
+## 2.2.3.7
+
+- Added extra time for live broadcasts to buffer and a **Connecting to live broadcast…** message while playback starts.
+
+## 2.2.3.6
+
+- Fixed encrypted live broadcasts being treated like regular videos. They now use the correct buffering, synchronisation and recovery behaviour.
+
+## 2.2.3.5
+
+- Improved how the in-game TV draws in front of or behind FFXIV’s UI and how it cleans up its graphics resources.
+
+## 2.2.3.4
+
+- Fixed sorting YouTube videos by newest when some results have no upload date.
+- Added TV spawn/despawn and audio-only controls to the minimised bar, refreshed the Mini Player icon and included the host in the watching count.
+- Fixed the minimised bar appearing above other plugin windows when it should be behind them.
+
+## 2.2.3.3
+
+- Broadcast uploads and playback use encrypted connections when handled by the updated plugin.
+- Watch Parties now use the authenticated host’s display name. Improved protection against abusive traffic and invalid requests.
+- Dailymotion now shows the same bottom playback controls as YouTube and Internet Archive.
+
+## 2.2.3.2
+
+- Fixed an unexpected YouTube library popup that appeared with some Windows language settings.
+
+## 2.2.3.1
+
+- Strengthened Watch Party entry checks, avatar upload validation and service protections.
+- DJ users need to refresh connection details and update the saved password in their streaming software.
+
+## 2.2.3.0
+
+- Moved plugin and Chromium downloads to the new Alpha Channel release location. The custom repository URL still works.
+- The top-bar Watch Party count includes the host, and guest presence can be counted while the plugin is running.
+- Reduced background requests for watch-history privacy. Changes you make to your own privacy settings still apply immediately.
+- Group chats can stay connected while renewing sign-in in the background.
+
+## 2.2.2.9
+
+- Added **Spotify** to Music / DJ. Control the Spotify desktop app, show its music scene on your TV and share the session with your Watch Party.
+- Added **Show cover art on TV** for Spotify. Cover art can also be shown to Watch Party viewers.
+- Added Play controls for saved albums and playlists. Ending the Spotify activity now pauses Spotify.
+- Improved the Spotify layout and guidance when the desktop app is closed.
+
+## 2.2.2.8
+
+- Added friend invitations to public groups. Pending invitations clear when the recipient joins on their own.
+- Profile picture uploads now accept images up to 5 MB and resize large images while preserving transparency and aspect ratio.
+
+## 2.2.2.7
+
+- Added optional Discord activity sharing for watching, listening, games and Watch Parties. It’s enabled by default and can be switched off. Browser details and local filenames stay private.
+
+## 2.2.2.6
+
+- Fixed OBS broadcasts showing as active without starting playback or spawning the TV.
+- Events now include the host in attendance totals without counting the host twice.
+- Added a close button to the splash and sign-in screens and clarified settings for Alpha Chat and video topics.
+
+## 2.2.2.5
+
+- Hid **Blast Party** from The Arcade, including search and favourites.
+
 2.2.2.4
 
 - Improved Watch Party recovery after a host disconnects. Viewers can stay and chat while the host reconnects.
