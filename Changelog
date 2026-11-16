@@ -1,3 +1,55 @@
+2.1.8.3
+
+- Expanded Bingo with standard and custom games, more patterns and round controls. Refined other Arcade games and their on-screen feedback.
+- Improved browser audio and video synchronisation and fixed approved redirects being cancelled.
+- Added an update notice in the sidebar. Changed the combat/cutscene playback option to **Stop**, with playback remaining stopped until resumed.
+
+## 2.1.8.2
+
+- Added compact broadcast controls and setup popups for Browser, Retro Games and Local Video.
+- Creating a Watch Party from these pages leaves broadcasting off until you choose **Start Broadcast**.
+- Added a game/FFXIV control switcher to the mini dock and fixed page controls being hidden behind the playback bar.
+
+## 2.1.8.1
+
+- Improved browser broadcast startup by waiting for playable audio and video before starting.
+- Fixed the featured room **Join** button. Emulator controls now release held buttons when FFXIV loses focus.
+- Improved stability when restarting broadcasts, closing the browser or replacing images.
+
+## 2.1.8.0
+
+- Fixed browser broadcasts stuttering after dropped audio and increased the viewer’s initial buffering.
+
+## 2.1.7.9
+
+- Improved diagnostics for browser broadcasts that stall or lag.
+
+## 2.1.7.8
+
+- Fixed notification sound previews only playing the first time.
+
+## 2.1.7.7
+
+- Added automatic hardware encoding selection for supported NVIDIA, Intel and AMD systems, with software fallback for supported broadcast sources.
+- Opening a supported game file from the library now switches to its console automatically.
+
+## 2.1.7.6
+
+- Added optional notification sounds for friend requests and chat messages.
+- Added auto-apply for TV presets and improved TV placement and syncing after travel, duty entry and respawning.
+- Reduced the graphics workload of enhanced music visualisers. Clarified when an active broadcast or game needs to end before transferring host.
+
+## 2.1.7.5
+
+- Improved Watch Party handovers so shared video and radio keep playing with their position, subtitles and TV placement.
+- Added a TV reset-position shortcut and moved active playback to the Mini Player when entering duties.
+- Added clearer friend removal confirmation and improved media startup and cleanup.
+
+## 2.1.7.4
+
+- Updated the XIVAuth sign-in popup and added confirmation before blocking someone.
+- Added unread message counts to the Friends page and a **Switch Queue** shortcut.
+
 ## 2.1.7.3
 
 - Improved live broadcast startup and subtitle selection. English and Off are easy to find, and the active track has a checkmark.
