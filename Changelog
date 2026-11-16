@@ -1,3 +1,33 @@
+# Alpha Channel changelog
+
+## 2.2.5.3
+
+- Fixed an issue that could make XIVAuth users sign in again every time they launched the game, particularly after restoring plugin files from a backup.
+- A fresh sign-in can repair damaged local login storage. If the new login still cannot be saved, Alpha Channel explains the problem and offers a retry.
+- Added a targeted in-plugin update notice for players on older versions affected by the shutdown and update crash.
+
+## 2.2.5.2
+
+- Added **Live Broadcast Buffering** under **Settings → Other**. Choose an extra 5, 10 or 20 seconds if a live stream pauses or stutters. A larger buffer adds viewing delay.
+- Extended the broadcast relay's playback window to around 30 seconds and improved compatibility with independent live streams.
+- Fixed Spotify sometimes needing two presses of Play after loading the plugin. Also fixed the TV disappearing, the controls resetting and the visualiser failing to appear.
+- Reduced freezes when starting, stopping or switching media.
+- Added a recovery mode for incomplete startup. It lets you open Alpha Channel and update safely. Updating returns the plugin to standard mode.
+- Fixed Patreon hearts covering verified ticks in the Party Directory and corrected layout issues in music settings.
+
+## 2.2.5.1
+
+- Fixed a graphics cleanup issue that could crash FFXIV while disabling, reloading or updating Alpha Channel.
+
+## 2.2.5.0
+
+- Improved how weekly broadcast allowance is saved and recovered after temporary storage failures.
+- Added a one-time repair for damaged allowance records. The repaired balance is capped by your tier and the allowance remaining on the service.
+
+## 2.2.4.9
+
+- Fixed a graphics compatibility issue that could prevent Alpha Channel from loading on some setups after installation or an update.
+
 ## 2.2.4.8
 
 - Added a **+** menu next to the YouTube, Dailymotion and Internet Archive search bars. Paste a video link to add it to a personal queue or the Watch Party queue.
