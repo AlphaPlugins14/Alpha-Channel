@@ -1,1 +1,28 @@
+## 2.1.6.3
 
+- Added shared drawing with solo and team modes and expanded Pictionary.
+- Added more live reactions and improved TV position-sync controls. Watch Party chat now supports removing your reactions and deleting permitted messages.
+- Improved login storage reliability.
+
+## 2.1.6.2
+
+- Redesigned Friends and Watch Party pages with a more compact dashboard.
+- Added the **React Live** hotbar and matched in-game reaction icons and colours to chat. Reactions can appear near the sender’s on-screen position.
+
+## 2.1.6.1
+
+- Improved 4K interface scaling and window resizing.
+- Refreshed Home and Add Media layouts and improved browsing and subscriptions for YouTube and Internet Archive.
+- Added clearer broadcasting controls and Patreon access guidance while keeping solo playback available.
+
+## 2.1.6.0
+
+- Improved TV startup when joining a party, viewer startup for Game Boy Advance broadcasts and the host’s DJ visualiser.
+- Choosing ordinary playback keeps you on the media page you’re browsing.
+
+## 2.1.5.9
+
+- Added NES and Game Boy Advance support and improved the retro game library and controls.
+- Added an embedded browser with favourites, history, privacy controls and an in-game TV view.
+- Added a dedicated Mini Player and improved how current media carries over when starting a Watch Party.
+- Added encrypted local login storage and clearer sign-in recovery.
