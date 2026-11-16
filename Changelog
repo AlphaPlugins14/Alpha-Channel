@@ -1,3 +1,55 @@
+2.1.7.3
+
+- Improved live broadcast startup and subtitle selection. English and Off are easy to find, and the active track has a checkmark.
+- Added a shared friend-request and unread-message badge. Chromium downloads when the other startup components are ready.
+
+## 2.1.7.2
+
+- Fixed audio compatibility for local-video broadcasts by using stereo AAC for viewers.
+
+## 2.1.7.1
+
+- Updated first launch to offer XIVAuth or guest access, a username and topic choices.
+- Expanded The Arcade and refreshed Watch Party activity layouts, including the React Live banner.
+- Improved Continue Watching, live radio resume, volume controls and YouTube loading indicators.
+
+## 2.1.7.0
+
+- Added the target-shooting activity that became **Air Force EX**, with a ready check and shared rounds.
+- Fixed a crash that could occur when stopping native playback, including sounds used by Choco RaceBets.
+
+## 2.1.6.9
+
+- Added **Choco RaceBets**, with six racers, a betting countdown, changing race conditions and a results ledger.
+- Refined the track, race pacing, payouts and sound effects.
+
+## 2.1.6.8
+
+- Made volume settings consistent across controls and saved the chosen volume between sessions.
+- Added a Pictionary results screen and expanded the word list.
+- Improved compatibility with other plugins using the same media playback library.
+
+## 2.1.6.7
+
+- Redesigned the Activities page with clearer cards and a consistent grid.
+- Added Roulette rules and improved the betting ledger.
+
+## 2.1.6.6
+
+- Fixed shared Pictionary drawing going out of sync between rounds.
+
+## 2.1.6.5
+
+- Added **Quiz** with Quick Play and custom settings.
+- Expanded **Roulette** with a setup screen, configurable play, improved feedback and wheel sounds.
+- Improved Pictionary scoreboards and long on-screen announcements.
+
+## 2.1.6.4
+
+- Added group chat creation from the Friends list and clearer video request cards.
+- Expanded Pictionary’s word list, improved round feedback and reduced unnecessary chat notifications.
+- Entering instanced content preserves the Watch Party connection. Retro-game broadcasts can pause after inactivity.
+
 ## 2.1.6.3
 
 - Added shared drawing with solo and team modes and expanded Pictionary.
