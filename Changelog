@@ -1,3 +1,51 @@
+## 2.2.4.8
+
+- Added a **+** menu next to the YouTube, Dailymotion and Internet Archive search bars. Paste a video link to add it to a personal queue or the Watch Party queue.
+- Videos added this way fetch their details automatically so the queue can show the video title.
+
+## 2.2.4.7
+
+- Added Korean text support across the interface, including usernames, profiles, chat and world names in the Party Directory.
+- New direct Alpha Channel signups now count toward **Accounts created** and **New registrations today** in the Discord stats.
+
+## 2.2.4.6
+
+- Increased the free weekly broadcast allowance and all Patreon allowances by 20%, rounded to the nearest 10 credits.
+- Retired the Halloween 2026 light show entry point and closed new automatic badge unlocks. Previously earned badges stay on profiles.
+
+## 2.2.4.5
+
+- Create an Alpha Channel account with just a username. XIVAuth remains available at signup and can be linked later to verify your character and recover access if you change devices or lose your plugin files.
+- Existing guest accounts can now use more of Alpha Channel, including profiles, friends, chat and Watch Parties. An in-plugin notice explains the change.
+- Added a verified tick for XIVAuth accounts. Direct uploads in private and group chats require verification. Links, viewing shared images and profile pictures remain available.
+- Broadcasting that uses allowance is available through XIVAuth verification or an eligible Patreon membership. The affected screens explain the requirement and offer both options.
+- Redesigned the welcome, signup, XIVAuth and topic-selection screens. Unavailable usernames now show a message, and direct signup reserves the name when you finish choosing topics.
+- Moved the friends and message counters beside volume across pages and made more space for longer usernames in the header.
+
+## 2.2.4.4
+
+- Fixed in-game TV rendering issues after resizing the FFXIV window.
+- Added a **1080** window-size preset. It keeps the Design interface scale and lets you resize the plugin to half the usual minimum width and height.
+- Improved recovery when a YouTube video loses sound during playback.
+- Removed automatic Watch Party posts in Discord and the associated quick code from the Party Directory. Event posts and plugin stats continue.
+
+## 2.2.4.3
+
+- Fixed YouTube sign-in closing unexpectedly in Edge on some PCs.
+- Improved video detection for pasted webpages. When a page’s videos need identifying, the new chooser lets you select a result, try another after a failure or try the original page.
+- The chooser shows thumbnails, duration, resolution, format and audio information when available. Confirmed alternate formats of the same video are grouped together.
+
+## 2.2.4.2
+
+- Added a dedicated **Twitch** page. Save your channel, check when you’re live and share your stream with your Watch Party. The page also offers trending streams, popular channels and favourites.
+- Popular Twitch channels stay listed after people stop watching. Channels watched in public parties appear first, then other live channels, then offline channels. Trending refreshes every 10 minutes.
+- Added a **Socials** tab to profiles. Add the accounts you want to share and choose who can see them. The editor previews the icon for the selected platform.
+- Made Watch Party creation consistent across pages, including the private-party option. Creating a party from Twitch opens the setup form.
+- Updated **Pictionary Teams** to match regular Pictionary more closely. Fixed palette clicks and enabled word selection and **Play Again** directly on the TV.
+- Fixed Watch Party kicks that appeared to do nothing, host transfers blocked by old queues and incorrect host-TV warnings for nearby viewers.
+- Home search offers **Play video**, **Add to your queue** and, while in a party, **Add to Watch Party queue** for video links. Viewer submissions follow the party’s request rules, and queued links fetch video details.
+- Improved YouTube startup, retry messages and audio playback. A video that fails to start now reports the failure and offers a retry.
+
 ## 2.2.4.1
 
 - Removed the occasional Alpha Channel promotional messages from FFXIV chat.
