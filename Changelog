@@ -1,4 +1,4 @@
-2.1.7.3
+## 2.1.7.3
 
 - Improved live broadcast startup and subtitle selection. English and Off are easy to find, and the active track has a checkmark.
 - Added a shared friend-request and unread-message badge. Chromium downloads when the other startup components are ready.
